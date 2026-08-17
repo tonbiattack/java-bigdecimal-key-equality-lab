@@ -1,13 +1,13 @@
 package com.example.bigdecimalkey;
 
 import java.math.BigDecimal;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
+import java.util.TreeMap;
 
 public class PriceCatalog {
 
-    private final Map<BigDecimal, String> skuByPrice = new HashMap<>();
+    private final Map<BigDecimal, String> skuByPrice = new TreeMap<>();
 
     public void register(BigDecimal price, String sku) {
         skuByPrice.put(price, sku);
